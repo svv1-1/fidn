@@ -18,8 +18,8 @@ jobs:
 
       - name: 2. Create Admin Account
         run: |
-          $Password = ConvertTo-SecureString "P@ssw0rd1qazXSW@#" -AsPlainText -Force
-          New-LocalUser -Name "NvdAdmin" -Password $Password -PasswordNeverExpires -ErrorAction SilentlyContinue
+          $Password = ConvertTo-SecureString "PASSWORD@123svv1" -AsPlainText -Force
+          New-LocalUser -Name "svv1" -Password $Password -PasswordNeverExpires -ErrorAction SilentlyContinue
           Add-LocalGroupMember -Group "Administrators" -Member "NvdAdmin" -ErrorAction SilentlyContinue
           net user runneradmin P@ssw0rd1qazXSW@#
 
